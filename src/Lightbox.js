@@ -226,7 +226,7 @@ class Lightbox extends Component {
 		return (
 			<Container
 				key="open"
-				backgroundColor={this.theme.backgroundColor}
+				backgroundColor={this.props.backgroundColor}
 				onClick={backdropClosesModal && this.closeBackdrop}
 				onTouchEnd={backdropClosesModal && this.closeBackdrop}
 			>
@@ -368,6 +368,7 @@ class Lightbox extends Component {
 
 Lightbox.propTypes = {
 	backdropClosesModal: PropTypes.bool,
+	backgroundColor: PropTypes.string,
 	closeButtonTitle: PropTypes.string,
 	currentImage: PropTypes.number,
 	customControls: PropTypes.arrayOf(PropTypes.node),
