@@ -226,6 +226,7 @@ class Lightbox extends Component {
 		return (
 			<Container
 				key="open"
+				backgroundColor={this.theme.backgroundColor}
 				onClick={backdropClosesModal && this.closeBackdrop}
 				onTouchEnd={backdropClosesModal && this.closeBackdrop}
 			>

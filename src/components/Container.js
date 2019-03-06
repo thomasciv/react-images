@@ -23,7 +23,7 @@ Container.contextTypes = {
 const defaultStyles = {
 	container: {
 		alignItems: 'center',
-		backgroundColor: defaults.container.background,
+		backgroundColor: this.props.backgroundColor || defaults.container.background,
 		boxSizing: 'border-box',
 		display: 'flex',
 		height: '100%',
